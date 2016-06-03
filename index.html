@@ -1,0 +1,255 @@
+<!doctype html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <title>Radek Nováček</title>
+        <style type="text/css">
+        html {
+        }
+        body {
+            margin: 0px;
+            font-family: Verdana, Arial, Courier, sans-serif;
+            background-image: url('img/background.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-color: black;
+            background-attachment: fixed;
+            color: #efefef;
+        }
+        a {
+            color: #efefef;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            color: #bfbfbf;
+        }
+        header {
+            width: 100vw;
+            background-color: black;
+            position: fixed;
+            top: 0px;
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            font-size: 120%;
+            font-variant: small-caps;
+        }
+        nav a {
+            margin-top: 1em;
+            margin-bottom: 1em;
+        }
+        main {
+            margin-top: 20vh;
+            width: 80vw;
+            margin-left: 10vw;
+        }
+        article {
+            min-height: 100vh;
+        }
+        article:last-child {
+            min-height: 90vh;
+        }
+        .box {
+            padding: 2em;
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 5px;
+            box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+        }
+        .anchor {
+            display: block;
+            position: relative;
+            top: -200px;
+            visibility: hidden;
+        }
+        .listitem:first-child {
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+        .listitem:last-child {
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            border-bottom: 0px;
+        }
+        .listitem {
+            border-bottom: solid black 1px;
+            background-color: rgba(255, 255, 255, 0.1);
+            display: flex;
+            padding-right: 1em;
+            padding-left: 1em;
+        }
+        .listitem .logo img {
+            width: 50px;
+            height: 50px;
+            padding-right: 1em;
+            padding-top: 1em;
+        }
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a href="#about">Radek Nováček</a>
+                <a href="#about">About me</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#hire">Hire me</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
+        <main>
+            <article>
+                <div class="box">
+                    <a class="anchor" name="about"></a>
+                    <h1>About me</h1>
+                    <p>
+                        I'm <strong>Radek Nováček</strong>, software developer and computer enthusiast from Czech Republic.
+                    </p>
+                    <p>
+                        I love the process of software development: starting with just an idea that needs to be broken to little pieces of something that can be transformed into a source code, then taking these pieces and putting them together one after another until the jigsaw is complete and you have a solution.
+                    </p>
+                    <p>
+                        I started to make computer programs at elementary school and it soon became my passion, my field of study and then my bread and butter.
+                        I have a master degree in Information Technology at Faculty of Information Technology, Brno University of Technology, with specialization on intelligent systems.
+                    </p>
+                    <p>
+                        <!-- open source -->
+                    </p>
+                </div>
+            </article>
+            <article>
+                <div class="box">
+                    <a class="anchor" name="portfolio"></a>
+                    <h1>Portfolio</h1>
+                    <section>
+                        <h2>Technologies</h2>
+                        <p>
+                            This list is definitely not complete, only technologies that I have substantial knowledge and experience are listed here. I've used plenty of different languages, frameworks, and tools during my career. And I do love trying new things and experimenting.
+                        </p>
+                        <div class="listbox">
+                            <div class="listitem">
+                                <div class="logo">
+                                    <img src="img/python.svg">
+                                </div>
+                                <div>
+                                    <h3>Python</h3>
+                                    <p>
+                                        <strong>Python</strong> is currently my language of choice. I love its elegance and simplicity yet great power. I do know and use many frameworks and libraries, for example <strong>Django</strong>, <strong>Flask</strong>, <strong>SQLAlchemy</strong>, ...
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="listitem">
+                                <div class="logo">
+                                    <img src="img/js.svg">
+                                </div>
+                                <div>
+                                    <h3>Javascript</h3>
+                                    <p>
+                                        Knowledge of <strong>Javascript</strong> is nowadays essential not only for frontend developers. Some of the libraries I'm familiar with are: <strong>jQuery</strong>, <strong>KnockoutJS</strong>, <strong>Twitter Bootstrap</strong>, <strong>d3</strong>, and many more.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="listitem">
+                                <div class="logo">
+                                    <img src="img/html.svg">
+                                </div>
+                                <div>
+                                    <h3>Web</h3>
+                                    <p>
+                                        <strong>HTML5</strong>, <strong>CSS</strong>, and <strong>Javascript</strong> are key ingredients in the recipe for creating not only web pages, but complex web information systems.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="listitem">
+                                <div class="logo">
+                                    <img src="img/c.svg">
+                                </div>
+                                <div>
+                                    <h3>C / C++</h3>
+                                    <p>
+                                        When it comes to low-level system tools and performance critical systems, C and C++ are great choice. I've used them to write GNU/Linux management systems, GUI applications with <strong>Qt</strong> framework, and embedded development for <strong>Arduino</strong>.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="listitem">
+                                <div class="logo">
+                                    <img src="img/linux.svg">
+                                </div>
+                                <div>
+                                    <h3>GNU/Linux</h3>
+                                    <p>
+                                        I'm <strong>GNU/Linux</strong> user since year 2005. It's my primary development and deployment platform. I also have <strong>RHCSA</strong> and <strong>RHCE</strong> certificates.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <h2>Projects</h2>
+                        <div class="listbox">
+                            <div class="listitem">
+                                <div>
+                                    <h3>SOKIS</h3>
+                                    <p>
+                                        <strong>SOKIS</strong> is web-based information system for construction company, designed and created from scratch using agile principles. Main targets are project planning, resource management, monitoring risks and performance, and evaluation of results. Currently used by more than 20 users.
+                                    </p>
+                                    <p>
+                                        I'm lead software developer of this project.
+                                    </p>
+                                    <p>
+                                        Server side of the project is written in <strong>Python</strong> using <strong>Django</strong> framework. Client side consists of several rich <strong>web</strong> applications and a <strong>mobile</strong> application written using <strong>Apache Cordova</strong> framework.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="listitem">
+                                <div>
+                                    <h3>virt-who</h3>
+                                    <p>
+                                        <strong>virt-who</strong> is an open source tool that monitors a hypervisor (local or remote) or virtualzation management system and reports what guests are running on what hypervisor. It supports libvirt, VMWare ESX(i) and vCenter, vdsm and RHEV-M, Microsoft Hyper-V, Citrix XenServer as a hypervisor, Satellite 5 and Satellite 6 as reporting target. It's written in Python. I'm original author and main contributor.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="listitem">
+                                <div>
+                                    <h3>OpenLMI</h3>
+                                    <p>
+                                        <strong>OpenLMI</strong> is an open source project to provide standardized API for GNU/Linux system management operations. Written in combination of C and Python. I'm responsible for networking provider.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="listitem">
+                                <div>
+                                    <h3>Matahari</h3>
+                                    <p>
+                                        <strong>Matahari</strong> is another open source attempt for system management, written in C++, now discontinued.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </article>
+            <article>
+                <div class="box">
+                    <a class="anchor" name="hire"></a>
+                    <h1>Hire me</h1>
+                    <p>
+                        I'm currently both self-employed and working in a big company on part-time. I'm also looking for new oportunities and challenges. Feel free to <a href="#contact">contact me</a> and we can discuss our future cooperation.
+                    </p>
+                </div>
+            </article>
+            <article>
+                <div class="box">
+                    <a class="anchor" name="contact"></a>
+                    <h1>Contact Information</h1>
+                    <ul>
+                        <li/>Email: rad.n (at) centrum (dot) cz
+                        <li/><a href="https://www.linkedin.com/in/radek-novacek">LinkedIn</a>
+                        <li/><a href="https://www.facebook.com/radnnn">Facebook</a>
+                    </ul>
+                </div>
+            </article>
+        </main>
+    </body>
+</html>
